@@ -1,0 +1,640 @@
+/* ═══════════════════════════════════════════════════════
+   RESPONSIVO — colar no final do teste.css
+   ═══════════════════════════════════════════════════════ */
+
+@media (max-width: 1280px) {
+
+    /* ── HERO: troca absolute por flex ── */
+    .container {
+        height: auto !important;
+        min-height: 90svh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
+        padding: 100px 5% 60px !important;
+        overflow: hidden !important;
+        position: relative !important;
+    }
+
+    .background-image {
+        position: absolute !important;
+        /* Mudei de relative para absolute */
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 100% !important;
+        z-index: -1 !important;
+        /* Garante que a imagem fique atrás do conteúdo */
+        height: 100% !important;
+        min-height: 100% !important;
+
+
+    }
+
+    /* Tira o absolute de todos os textos do hero */
+    .main-title,
+    .subtitle,
+    .purpose,
+    .schedule-button {
+        position: relative !important;
+        left: auto !important;
+        top: 1.5rem !important;
+        width: 100% !important;
+        max-width: 640px !important;
+    }
+
+    .main-title {
+        font-size: clamp(.5rem, 5vw, 60px) !important;
+        line-height: 1.1 !important;
+        margin-bottom: 0 !important;
+
+    }
+
+    .subtitle {
+        font-size: clamp(1.8rem, 4vw, 48px) !important;
+        line-height: 1.0 !important;
+        margin-top: 0.3rem !important;
+        top: -3.1rem !important;
+
+    }
+
+    .purpose {
+        font-size: clamp(1.5rem, 1.5vw, 24px) !important;
+        margin-top: 1.5rem !important;
+        top: -0.3rem !important;
+
+
+    }
+
+    .schedule-button {
+        max-width: 390px !important;
+        height: auto !important;
+        min-height: 64px !important;
+        margin-top: 2rem !important;
+        padding: 0 2rem !important;
+        top: -1.9rem !important;
+
+    }
+
+    .schedule-text {
+        font-size: clamp(1rem, 2vw, 26px) !important;
+        margin-right: 40px !important;
+    }
+
+    .whatsappiconn {
+        left: 84% !important;
+        right: 16px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+
+
+    }
+
+    /* Footer info do hero */
+    .footer-info {
+        position: absolute !important;
+        left: auto !important;
+        top: auto !important;
+        margin-top: 0rem !important;
+        width: 0rem !important;
+        height: 0rem !important;
+        left: -200px !important;
+    }
+
+    /* Ícones do topo */
+    .top-icons {
+        top: 16px !important;
+        right: 16px !important;
+    }
+
+    /* Seção sobre mim */
+    .sobre-mim-container {
+        transform: none !important;
+    }
+
+
+
+}
+
+/* ── Tablet: até 900px ── */
+@media (max-width: 900px) {
+
+    .container {
+        padding: 80px 4% 50px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .background-image {
+        position: absolute !important;
+        /* Mudei de relative para absolute */
+        top: 0 !important;
+        left: 0 !important;
+        width: 160% !important;
+        height: 100% !important;
+        min-height: 100% !important;
+        z-index: -1 !important;
+        /* Garante que a imagem fique atrás do conteúdo */
+        height: 100% !important;
+        min-height: 100% !important;
+        background-size: cover;
+
+
+    }
+
+    /* Tira o absolute de todos os textos do hero */
+    .main-title,
+    .subtitle,
+    .purpose {
+        position: relative !important;
+        left: auto !important;
+        width: 100% !important;
+        max-width: 640px !important;
+        text-align: center !important;
+        margin: 0 auto 1rem !important;
+    }
+
+    .main-title {
+        font-size: clamp(.5rem, 5vw, 60px) !important;
+        line-height: 1.1 !important;
+        margin-bottom: 0 !important;
+        order: 1 !important;
+        top: 8.1rem !important;
+    }
+
+    .subtitle {
+        font-size: clamp(1.5rem, 3.5vw, 42px) !important;
+        line-height: 1.2 !important;
+        margin-top: 0.3rem !important;
+        order: 2 !important;
+        top: 2.1rem !important;
+    }
+
+    .purpose {
+        font-size: clamp(1.5rem, 1.5vw, 24px) !important;
+        margin-top: 1.2rem !important;
+        order: 3 !important;
+        top: -1.1rem !important;
+    }
+
+    /* Ajustes para o botão */
+    .schedule-button {
+        position: relative !important;
+        width: 100% !important;
+        max-width: 390px !important;
+        height: auto !important;
+        min-height: 64px !important;
+        padding: 0 2rem !important;
+        margin: 1.5rem auto !important;
+        order: 4 !important;
+        left: auto !important;
+        top: auto !important;
+    }
+
+    .schedule-text {
+        font-size: clamp(1.5rem, 2.5vw, 28px) !important;
+        margin-right: 40px !important;
+    }
+
+    .whatsappiconn {
+        position: absolute !important;
+        right: 16px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+    }
+
+
+    .carousel-slide {
+        flex-direction: column;
+        padding: 20px;
+        min-height: 700px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    .slide-content {
+        width: 100% !important;
+        padding: 0 20px !important;
+        text-align: center;
+        margin-bottom: 30px !important;
+        /* Adiciona espaço entre o texto e a imagem */
+    }
+
+    .slide-image {
+        width: 80% !important;
+        margin: 0 auto 30px !important;
+        /* Adiciona espaço abaixo da imagem */
+        display: block !important;
+    }
+
+    .slide-title {
+        left: 0 !important;
+        text-align: center;
+        margin-bottom: 20px !important;
+        /* Adiciona espaço entre o título e o texto */
+        font-size: clamp(24px, 3vw, 32px) !important;
+    }
+
+    .slide-text {
+        left: 0 !important;
+        text-align: center;
+        font-size: clamp(20px, 3.5vw, 25px) !important;
+        margin-bottom: 20px !important;
+        /* Adiciona espaço entre o texto e o botão */
+    }
+
+    .slide-button {
+        margin: 20px auto;
+        left: 0 !important;
+    }
+
+    .left-arrow {
+        left: 10px !important;
+    }
+
+    .right-arrow {
+        right: 10px !important;
+    }
+     .encontra{
+          height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important; /* Altera de flex-start para center */
+    padding: 100px 5% 60px !important;
+    overflow: hidden !important;
+    position: relative !important;
+    text-align: center !important; /* Centraliza o texto */
+    width: 100% !important; /* Garante que ocupe toda a largura */
+    }
+
+
+    /* About */
+    #about {
+        grid-template-columns: 1fr !important;
+    }
+
+    .about-img-wrap {
+        display: none !important;
+    }
+
+    /* How */
+    .steps-grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .steps-line {
+        display: none !important;
+    }
+
+    /* Testimonials */
+    .testi-grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .testi-intro {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 1rem !important;
+    }
+
+    /* FAQ */
+    #faq {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        padding: 5rem 3rem !important;
+    }
+
+    /* Booking */
+    #booking {
+        grid-template-columns: 1fr !important;
+        gap: 3rem !important;
+        padding: 5rem 3rem !important;
+    }
+
+    /* Footer */
+    .footer-top {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 2rem !important;
+    }
+
+    /* Sobre mim */
+    .sobre-mim-container {
+        flex-direction: column !important;
+        transform: none !important;
+    }
+
+    .sobre-mim-imagem {
+        padding-right: 0 !important;
+    }
+
+    .imagem-perfil {
+        max-width: 100% !important;
+    }
+
+    .sobre-mim-texto {
+        max-width: 100% !important;
+        transform: none !important;
+    }
+
+    .sobre-mim-texto h1 {
+        font-size: clamp(1.8rem, 5vw, 36px) !important;
+        top: 0 !important;
+    }
+
+    .sobre-mim-texto p {
+        font-size: clamp(0.9rem, 2.5vw, 18px) !important;
+        top: 0 !important;
+    }
+
+    #sobre-mim-novo {
+        min-height: auto !important;
+        padding: 3rem 2rem !important;
+    }
+
+    .section {
+        padding: 5rem 3rem !important;
+    }
+
+    #how {
+        padding: 5rem 3rem !important;
+    }
+
+    footer {
+        padding: 3rem 2rem 2rem !important;
+    }
+}
+
+/* ── Mobile: até 640px ── */
+@media (max-width: 640px) {
+
+    .container {
+        padding: 80px 4% 50px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .background-image {
+        position: absolute !important;
+        /* Mudei de relative para absolute */
+        top: 0 !important;
+        left: 0 !important;
+        width: 160% !important;
+        height: 100% !important;
+        min-height: 100% !important;
+        z-index: -1 !important;
+        /* Garante que a imagem fique atrás do conteúdo */
+        height: 100% !important;
+        min-height: 100% !important;
+        background-size: cover;
+
+
+    }
+
+    /* Tira o absolute de todos os textos do hero */
+    .main-title,
+    .subtitle,
+    .purpose {
+        position: relative !important;
+        left: auto !important;
+        width: 100% !important;
+        max-width: 640px !important;
+        text-align: center !important;
+        margin: 0 auto 1rem !important;
+    }
+
+    .main-title {
+        font-size: clamp(.5rem, 5vw, 60px) !important;
+        line-height: 1.1 !important;
+        margin-bottom: 0 !important;
+        order: 1 !important;
+        top: 8.1rem !important;
+    }
+
+    .subtitle {
+        font-size: clamp(1.5rem, 1.5vw, 24px) !important;
+        line-height: 1.2 !important;
+        margin-top: 0.3rem !important;
+        order: 2 !important;
+        top: 2.1rem !important;
+    }
+
+    .purpose {
+        font-size: clamp(1rem, 1vw, 20px) !important;
+        margin-top: 1.2rem !important;
+        order: 3 !important;
+        top: -6.1rem !important;
+    }
+
+    /* Ajustes para o botão */
+    .schedule-button {
+        position: relative !important;
+        width: 100% !important;
+        max-width: 290px !important;
+        height: auto !important;
+        min-height: 64px !important;
+        padding: 0 2rem !important;
+        margin: 1.5rem auto !important;
+        order: 4 !important;
+        left: auto !important;
+        top: -6.1rem !important;
+    }
+
+    .schedule-text {
+        font-size: clamp(1rem, 2vw, 20px) !important;
+        margin-right: 40px !important;
+    }
+
+    .whatsappiconn {
+        left: 82% !important;
+        right: 10px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        width: 40px !important;
+        height: 40px !important;
+
+    }
+
+
+    .carousel-slide {
+        flex-direction: column;
+        padding: 20px;
+        min-height: 700px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    .slide-content {
+        width: 100% !important;
+        padding: 0 20px !important;
+        text-align: center;
+        margin-bottom: 30px !important;
+        /* Adiciona espaço entre o texto e a imagem */
+    }
+
+    .slide-image {
+        width: 80% !important;
+        margin: 0 auto 30px !important;
+        /* Adiciona espaço abaixo da imagem */
+        display: block !important;
+    }
+    .encontra{
+          height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important; /* Altera de flex-start para center */
+    padding: 100px 5% 60px !important;
+    overflow: hidden !important;
+    position: relative !important;
+    text-align: center !important; /* Centraliza o texto */
+    width: 100% !important; /* Garante que ocupe toda a largura */
+    }
+
+    .slide-title {
+        left: 0 !important;
+        text-align: center;
+        margin-bottom: 20px !important;
+        /* Adiciona espaço entre o título e o texto */
+        font-size: clamp(24px, 3vw, 32px) !important;
+    }
+
+    .slide-text {
+        left: 0 !important;
+        text-align: center;
+        font-size: clamp(20px, 3.5vw, 25px) !important;
+        margin-bottom: 20px !important;
+        /* Adiciona espaço entre o texto e o botão */
+    }
+
+    .slide-button {
+        margin: 20px auto;
+        left: 0 !important;
+    }
+
+    .left-arrow {
+        left: 10px !important;
+    }
+
+    .right-arrow {
+        right: 10px !important;
+    }
+
+
+    /* How */
+    #how {
+        padding: 4rem 1.2rem !important;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Testimonials */
+    .testi-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    #testimonials {
+        padding: 4rem 1.2rem !important;
+    }
+
+    /* FAQ */
+    #faq {
+        padding: 4rem 1.2rem !important;
+    }
+
+    /* Booking */
+    #booking {
+        padding: 4rem 1.2rem !important;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr !important;
+    }
+
+    .booking-form {
+        padding: 1.5rem 1rem !important;
+    }
+
+    /* Footer */
+    .footer-top {
+        grid-template-columns: 1fr !important;
+    }
+
+    .footer-bottom {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        text-align: center !important;
+    }
+
+    footer {
+        padding: 2.5rem 1.2rem 1.5rem !important;
+    }
+
+    /* Sobre mim */
+    #sobre-mim-novo {
+        padding: 2rem 1.2rem !important;
+    }
+
+    /* Section geral */
+    .section {
+        padding: 4rem 1.2rem !important;
+    }
+
+    /* WhatsApp float */
+    .whatsapp-float {
+        width: 50px !important;
+        height: 50px !important;
+        bottom: 1rem !important;
+        right: 1rem !important;
+    }
+
+    /* Oculta decorative que quebra layout */
+    .decorative-image {
+        display: none !important;
+    }
+
+    #booking::before {
+        display: none !important;
+    }
+}
+
+/* ── Mobile pequeno: até 400px ── */
+@media (max-width: 400px) {
+    .main-title {
+        font-size: 1.7rem !important;
+    }
+
+    .subtitle {
+        font-size: 1.05rem !important;
+    }
+
+    .section-title {
+        font-size: 1.5rem !important;
+    }
+ .encontra {
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important; /* Altera de flex-start para center */
+  
+    overflow: hidden !important;
+    position: relative !important;
+    text-align: center !important; /* Centraliza o texto */
+    width: 100% !important; /* Garante que ocupe toda a largura */
+}
+
+
+    .slide-title {
+        font-size: 1.3rem !important;
+        top: 15px !important;
+    }
+}
