@@ -1,0 +1,1320 @@
+/* Reset básico e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Albert Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Estilos para o vídeo */
+.intro-video {
+    position: fixed;
+    /* Fixa o vídeo no fundo da tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Garante que a imagem do vídeo cubra toda a tela */
+    z-index: 999;
+    /* Coloca o vídeo acima de outros elementos */
+}
+
+
+
+/* Menu de navegação fixo e centralizado */
+.menu {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    /*  background: rgba(255, 255, 255, 0.9);*/
+    padding: 10px 30px;
+    border-radius: 10px;
+    /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
+    z-index: 1000;
+}
+
+.menu-item {
+    font-family: 'Alata', sans-serif;
+    font-size: 26px;
+    line-height: 36px;
+    color: #222222;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+.menu-item:hover {
+    color: #AE3B00;
+}
+
+/* Container principal */
+.container {
+    position: relative;
+    width: 100%;
+    /* Ajustado para 100% da largura */
+    min-height: 100vh;
+    /* Altura mínima de 100% da viewport */
+    margin: 0 auto;
+    padding-top: 80px;
+    /* Espaço para o menu fixo */
+    box-sizing: border-box;
+    /* Garante que o padding não aumente a largura total */
+}
+
+/* Imagem de fundo */
+.background-image {
+    position: fixed;
+    /* Alterado para fixed para cobrir toda a tela */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Largura de 100% da viewport */
+    height: 100vh;
+    /* Altura de 100% da viewport */
+    background: url('fundo\ inicial.png') no-repeat center center;
+    background-size: cover;
+    /* Garante que a imagem cubra todo o espaço */
+    z-index: -2;
+    /* Fica atrás de todo o conteúdo */
+}
+
+.rectangle-3 {
+    position: absolute;
+    width: 2240px;
+    height: 288px;
+    left: 0px;
+    top: 635px;
+    background: url('Rectangle\ 3.png') no-repeat center center;
+    background-size: cover;
+    /* Garante que a imagem cubra todo o espaço */
+    z-index: 0;
+}
+
+
+/* Títulos e textos */
+.main-title {
+    position: absolute;
+    width: 620px;
+    height: 157px;
+    left: 140px;
+    top: 215px;
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 70px;
+    line-height: 74px;
+    color: #AE3B00;
+
+}
+
+.subtitle {
+    position: absolute;
+    width: 775px;
+    height: 192px;
+    left: 140px;
+    top: 305px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: #894F32;
+}
+
+.purpose {
+    position: absolute;
+    width: 553px;
+    height: 80px;
+    left: 140px;
+    top: 528px;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    color: #292929;
+}
+
+.schedule-button {
+    position: absolute;
+    width: 428px;
+    height: 87px;
+    left: 140px;
+    top: 647px;
+    background: linear-gradient(90.02deg, #8b4d20 -10.02%, #532e15 99.98%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 55px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 15px;
+}
+
+
+
+
+/* Ícone do WhatsApp no botão */
+.whatsapp-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    /* Tamanho do ícone */
+    color: #25D366;
+    /* Cor verde do WhatsApp */
+}
+
+/* Texto do botão */
+.schedule-text {
+    font-family: 'Esteban', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    color: #FFFFFF;
+    margin-right: 10px; /* Espaçamento entre o texto e o ícone */
+}
+
+/* Ícone do WhatsApp */
+.whatsapp-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #25D366;
+    margin-left: 10px; /* Espaçamento entre o texto e o ícone */
+}
+
+
+/* Rodapé */
+/* Estilos para o rodapé */
+.footer-info {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 1589px;
+    top: 790px;
+    background: rgba(0, 0, 0, 0.63);
+    border-radius: 50px;
+    display: flex;
+    /* Usando flex para alinhar a imagem e o texto */
+    flex-direction: row;
+    /* Imagem à esquerda e o texto à direita */
+    align-items: center;
+    /* Alinha verticalmente a imagem e o texto */
+    justify-content: start;
+    /* Alinha a imagem e o texto à esquerda */
+    text-align: left;
+    padding: 10px 15px;
+    gap: 15px;
+    /* Espaço entre a imagem e o texto */
+}
+
+/* Container da imagem */
+.footer-image-container {
+    width: 50px;
+    /* Tamanho da imagem ajustado */
+    height: 50px;
+    /* Mantendo o círculo proporcional */
+    border-radius: 50%;
+    /* Torna a imagem redonda */
+    overflow: hidden;
+    margin-left: -5px;
+
+}
+
+/* Estilo da imagem */
+.footer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Garante que a imagem cubra toda a área do círculo */
+    left: -30px;
+}
+
+/* Estilos para o texto */
+.footer-text {
+    color: #FFFFFF;
+    font-family: 'Esteban', serif;
+    font-size: 14px;
+    /* Ajustando o tamanho da fonte */
+    line-height: 18px;
+    text-align: left;
+    /* Garantindo que o texto fique alinhado à esquerda */
+}
+
+.footer-text insta {
+    font-size: 14px;
+
+}
+
+/* Nome da Dra. Daiana */
+.footer-text.name {
+    font-weight: bold;
+}
+
+/* Instagram da Dra. Daiana */
+.footer-text.insta {
+    margin-top: 5px;
+    /* Ajustando o espaço entre o nome e o Instagram */
+}
+
+/* Usando flex-direction: column para empilhar os textos */
+.footer-texts {
+    display: flex;
+    flex-direction: column;
+    /* Alinha o texto em coluna (um acima do outro) */
+    align-items: flex-start;
+    /* Alinha os textos à esquerda */
+    gap: 2px;
+    /* Espaço entre o nome e o Instagram */
+}
+
+
+
+
+
+/* Ícones no topo */
+.top-icons {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+    z-index: 1001;
+}
+
+.top-icons .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.top-icons .icon i {
+    font-size: 28px;
+    /* Aumentado para 28px */
+}
+
+
+.top-icons .icon i.fa-whatsapp {
+    color: #25D366;
+    /* Verde do WhatsApp */
+}
+
+.top-icons .icon i.fa-instagram {
+    color: #E4405F;
+    /* Rosa do Instagram */
+}
+
+.top-icons .icon i.fa-linkedin {
+    color: #0077B5;
+    /* Azul do LinkedIn */
+}
+
+/* Imagem decorativa */
+.decorative-image {
+    position: absolute;
+    width: 222px;
+    height: 333px;
+    left: 739px;
+    top: -33px;
+    background: url('') no-repeat center center;
+    background-size: contain;
+}
+
+/* Estilos para o vídeo */
+.intro-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 999;
+    opacity: 1;
+    /* Inicialmente visível */
+    transition: opacity 2s ease-out;
+    /* Transição suave */
+}
+
+
+
+/* Estilos para o vídeo */
+.intro-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 999;
+    opacity: 1;
+    /* Inicialmente visível */
+    transition: opacity 2s ease-out;
+    /* Transição suave */
+}
+
+/* Conteúdo da página (inicialmente oculto) */
+.container {
+    opacity: 0;
+    /* Inicialmente oculto */
+    transition: opacity 2s ease-out;
+    /* Transição suave */
+    z-index: 1;
+    /* Fica acima do vídeo */
+}
+
+
+
+/* Tela 02 */
+
+/* Nova seção - Sobre mim novo */
+#sobre-mim-novo {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #FFFFFF;
+}
+
+/* Novo background Image - tela inteira */
+#sobre-mim-novo .background-novo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Largura de 100% da viewport */
+    height: 100vh;
+    /* Altura de 100% da viewport */
+    background: url('Tela 5.png') no-repeat center center;
+    background-size: cover;
+    /* Ajusta o tamanho da imagem */
+}
+
+/* Novo Título Sobre mim */
+#sobre-mim-novo h1 {
+    position: absolute;
+    width: 307px;
+    height: 70px;
+    left: 958px;
+    top: 179px;
+    font-family: 'Song Myung', sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: #894F32;
+}
+
+/* Novo Texto de descrição */
+#sobre-mim-novo p {
+    position: absolute;
+    width: 585px;
+    height: 480px;
+    left: 958px;
+    top: 259px;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* Personalização da animação */
+[data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Quando a animação estiver ativa */
+[data-aos="fade-right"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+/* Section container */
+.distress-section {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    overflow: hidden;
+    /* Garante que o conteúdo não ultrapasse a tela */
+}
+
+/* Background Image */
+.background-image03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1200px;
+    background-image: url('Tela\ 11.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+/* Title */
+.title {
+    position: absolute;
+    width: 606px;
+    height: 188px;
+    left: 50%;
+    top: 70px;
+    /* Centraliza o título no topo da tela */
+    transform: translateX(-50%) translateY(100px);
+    /* Centraliza horizontalmente e começa abaixo da tela */
+    font-family: 'Song Myung';
+    font-size: 60px;
+    line-height: 50px;
+    color: #894F32;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+    /* Inicialmente invisível */
+    transition: opacity 1s ease, transform 1s ease;
+    /* Transição suave */
+}
+
+/* Animação de scroll para o título */
+@keyframes scrollAnimationTitle {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(100px);
+        /* Começa abaixo da tela */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+        /* Vai para sua posição original */
+    }
+}
+
+/* Adiciona a animação quando o título se tornar visível */
+.title.animate {
+    animation: scrollAnimationTitle 1s ease-out forwards;
+}
+
+
+/* Frame Container */
+.frame-container {
+    position: absolute;
+    width: 100%;
+    top: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Individual Frame */
+.frame {
+    position: relative;
+    width: 400px;
+    height: 580px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra suave em torno de cada frame */
+    margin: 10px;
+    opacity: 0;
+    /* Inicialmente invisível */
+    transform: translateY(100px);
+    /* Começa fora da tela */
+    transition: opacity 1s ease, transform 1s ease;
+    /* Transição suave */
+}
+
+/* Image inside frames */
+.image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.274);
+    /* Sombra nas imagens dentro dos frames */
+}
+
+/* Posição específica dos frames */
+#frame-1 {
+    top: -20px;
+}
+
+#frame-3 {
+    top: -15px;
+}
+
+#frame-2 {
+    top: 76px;
+}
+
+#frame-4 {
+    top: 76px;
+}
+
+/* Animação de scroll para os frames */
+@keyframes scrollAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        /* Começa abaixo da tela */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Vai para sua posição original */
+    }
+}
+
+/* Animação de flutuação para as imagens */
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+        /* Começa na posição original */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Move 10px para cima */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Volta para a posição original */
+    }
+}
+
+/* Adiciona a animação de flutuação contínua aos frames */
+.frame.animate {
+    animation: scrollAnimation 1s ease-out forwards, floating 4s ease-in-out infinite;
+    /* Combina as animações */
+}
+
+/* Quando a animação de scroll termina e começa a flutuação */
+.frame {
+    opacity: 0;
+    transform: translateY(100px);
+    /* Começa fora da tela */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+
+
+/* Tela 9 */
+#tela9 {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+
+    overflow: hidden;
+    /* Garante que o conteúdo não ultrapasse a tela */
+
+}
+
+/* Fundo 2 */
+.fundo2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+
+    background-image: url('Tela\ 10.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Rectangle 8 */
+.rectangle8 {
+    position: absolute;
+    width: 100%;
+    height: 385.3px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(185.45deg, rgba(217, 217, 217, 0) 17.28%, #FFFDFD 95.25%);
+    transform: rotate(179.83deg);
+}
+
+.beneficios {
+    position: absolute;
+    width: 606px;
+    left: 50%;
+    /* Centraliza horizontalmente */
+    top: -25px;
+    /* Subir o título - ajuste o valor conforme necessário */
+    transform: translateX(-50%);
+    /* Ajuste horizontal para garantir que o centro fique no meio */
+    font-family: 'Song Myung';
+    font-size: 60px;
+    line-height: 50px;
+    color: #894F32;
+    text-align: center;
+    font-weight: bold;
+    white-space: pre-wrap;
+    /* Permite quebras de linha */
+    word-wrap: break-word;
+    /* Quebra palavras longas se necessário */
+    max-width: 100%;
+    /* Impede que o texto ultrapasse a largura da caixa */
+}
+
+
+/* Para forçar a quebra de linha onde necessário */
+.beneficios span {
+    display: block;
+}
+
+
+/* Frame 9 */
+.frame9 {
+    position: absolute;
+    width: 416px;
+    /* Largura do quadro */
+    height: 305px;
+    /* Altura do quadro */
+    left: 99px;
+    top: 291px;
+    background: #FFFFFF;
+    box-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse o quadro */
+    transform: translateX(40%);
+    z-index: 5;
+}
+
+/* Imagem dentro do quadro */
+.chatgpt-image5 {
+    position: absolute;
+    width: 100%;
+    /* Preenche 100% da largura do frame */
+    height: 100%;
+    /* Preenche 100% da altura do frame */
+    left: 0;
+    /* Alinha à esquerda do frame */
+    top: 0;
+    /* Alinha ao topo do frame */
+    background: url('Autocuidado.png') no-repeat center center;
+    /* Caminho da imagem */
+    background-size: cover;
+    /* Ajusta a imagem para cobrir todo o frame, mantendo a proporção */
+    border-radius: 25px;
+    /* Mesma borda arredondada do frame */
+}
+
+/* Frame 10 */
+.frame10 {
+    position: absolute;
+    width: 416px;
+    /* Largura do quadro */
+    height: 305px;
+    /* Altura do quadro */
+    left: 560px;
+    top: 291px;
+    background: #FFFFFF;
+    box-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transform: translateX(40%);
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse o quadro */
+    z-index: 5;
+}
+
+
+.chatgpt-image1 {
+    position: absolute;
+    width: 100%;
+    /* Preenche 100% da largura do frame */
+    height: 100%;
+    /* Preenche 100% da altura do frame */
+    left: 0;
+    /* Alinha à esquerda do frame */
+    top: 0;
+    /* Alinha ao topo do frame */
+    background: url('Reduz.png') no-repeat center center;
+    /* Caminho da imagem */
+    background-size: cover;
+    /* Ajusta a imagem para cobrir todo o frame, mantendo a proporção */
+    border-radius: 25px;
+    /* Mesma borda arredondada do frame */
+}
+
+
+/* Frame 11 */
+.frame11 {
+    position: absolute;
+    width: 416px;
+    /* Largura do quadro */
+    height: 305px;
+    /* Altura do quadro */
+    left: 1021px;
+    top: 291px;
+    background: #FFFFFF;
+    box-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+    transform: translateX(40%);
+    border-radius: 25px;
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse o quadro */
+}
+
+/* Imagem dentro do quadro */
+.chatgpt-image2 {
+    position: absolute;
+    width: 100%;
+    /* Preenche 100% da largura do frame */
+    height: 100%;
+    /* Preenche 100% da altura do frame */
+    left: 0;
+    /* Alinha à esquerda do frame */
+    top: 0;
+    /* Alinha ao topo do frame */
+    background: url(autonomia.png) no-repeat center center;
+    /* Caminho da imagem */
+    background-size: cover;
+    /* Ajusta a imagem para cobrir todo o frame, mantendo a proporção */
+    border-radius: 25px;
+    /* Mesma borda arredondada do frame */
+}
+
+
+/* Frame 12 */
+.frame12 {
+    position: absolute;
+    width: 486px;
+    /* Largura do quadro */
+    height: 341px;
+    /* Altura do quadro */
+    left: 250px;
+    top: 640px;
+    background: #FFFFFF;
+    box-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transform: translateX(35%);
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse o quadro */
+}
+
+/* Imagem dentro do quadro */
+.chatgpt-image3 {
+    position: absolute;
+    width: 100%;
+    /* Preenche 100% da largura do frame */
+    height: 100%;
+    /* Preenche 100% da altura do frame */
+    left: 0;
+    /* Alinha à esquerda do frame */
+    top: 0;
+    /* Alinha ao topo do frame */
+    background: url(Relações.png) no-repeat center center;
+    /* Caminho da imagem */
+    background-size: cover;
+    /* Ajusta a imagem para cobrir todo o frame, mantendo a proporção */
+    border-radius: 25px;
+    /* Mesma borda arredondada do frame */
+}
+
+.frame13 {
+    position: absolute;
+    width: 486px;
+    /* Largura do quadro */
+    height: 341px;
+    /* Altura do quadro */
+    left: 800px;
+    top: 640px;
+    background: #FFFFFF;
+    box-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse o quadro */
+    transform: translateX(31%);
+    z-index: 5;
+}
+
+
+.chatgpt-image4 {
+    position: absolute;
+    width: 100%;
+    /* Preenche 100% da largura do frame */
+    height: 100%;
+    /* Preenche 100% da altura do frame */
+    left: 0;
+    /* Alinha à esquerda do frame */
+    top: 0;
+    /* Alinha ao topo do frame */
+    background: url('aprimoramento.png') no-repeat center center;
+    /* Caminho da imagem */
+    background-size: cover;
+    /* Ajusta a imagem para cobrir todo o frame, mantendo a proporção */
+    border-radius: 25px;
+    /* Mesma borda arredondada do frame */
+}
+
+
+
+/* Estilo inicial: imagens invisíveis e com deslocamento vertical */
+.frame10,
+.frame11,
+.frame12,
+.frame13,
+.frame9 {
+    opacity: 0;
+    transform: translateY(30px) translateX(var(--original-translateX, 0));
+    transition: none;
+}
+
+/* Classe para aplicar a animação */
+.frame10.animate,
+.frame11.animate,
+.frame12.animate,
+.frame13.animate,
+.frame9.animate {
+    opacity: 1;
+    transform: translateY(0) translateX(var(--original-translateX, 0));
+    transition:
+        opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+
+/* Tela 13 */
+.tela-13 {
+    position: relative;
+    width: 100%;
+    height: 1024px;
+    overflow: hidden;
+}
+
+/* Fundo */
+.fundo-10 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1024px;
+
+    background-image: url('Tela\ 11.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Efeito de blur */
+.ellipse-3 {
+    position: absolute;
+    width: 818px;
+    height: 901px;
+    left: -256px;
+    top: 138px;
+    background: rgba(255, 255, 255, 0.76);
+    filter: blur(150px);
+}
+
+/* Gradiente inferior */
+.rectangle-8 {
+    position: absolute;
+    width: 1536px;
+    height: 261px;
+    left: 1px;
+    top: 763px;
+    background: linear-gradient(185.45deg, rgba(217, 217, 217, 0) 17.28%, #FFFDFD 95.25%);
+}
+
+/* Retângulo superior */
+.rectangle-superior-2 {
+    position: absolute;
+    width: 966px;
+    height: 410px;
+    left: 221px;
+    top: 53px;
+    background: #F0E2D3;
+    border-radius: 20px;
+
+}
+
+/* Retângulo inferior */
+.rectangle-inferior-2 {
+    position: absolute;
+    width: 966px;
+    height: 410px;
+    left: 515px;
+    top: 512px;
+    background: #F0E2D3;
+    border-radius: 20px;
+
+}
+
+/* Título superior */
+.titulo-superior-2 {
+    position: absolute;
+    width: 472px;
+    height: 87px;
+    left: 234px;
+    top: 85px;
+
+    font-family: 'Song Myung';
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: bold;
+    white-space: pre-wrap;
+    font-size: 60px;
+    line-height: 30px;
+    font-size: 32px;
+
+    color: #55250C;
+}
+
+/* Texto superior */
+.texto-superior-2 {
+    position: absolute;
+    width: 472px;
+    height: 269px;
+    left: 234px;
+    top: 173px;
+    font-family: 'Albert Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+}
+
+/* Título inferior */
+.titulo-inferior-2 {
+    position: absolute;
+    width: 472px;
+    height: 40px;
+    left: 234px;
+    top: 530px;
+    font-family: 'Song Myung';
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: bold;
+    white-space: pre-wrap;
+    font-size: 60px;
+    line-height: 30px;
+    font-size: 32px;
+
+    color: #55250C;
+    transform: translateX(64%);
+}
+
+/* Texto inferior */
+.texto-inferior-2 {
+    position: absolute;
+    width: 472px;
+    height: 300px;
+    left: 234px;
+    top: 589px;
+    font-family: 'Albert Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    transform: translateX(64%);
+}
+
+/* Imagem superior */
+.imagem-superior-2 {
+    position: absolute;
+    width: 445px;
+    height: 410px;
+    left: 792px;
+    top: 53px;
+    background: url('Imagem\ de\ atendimento\ ].png');
+    border-radius: 20px;
+}
+
+/* Imagem inferior */
+.imagem-inferior-2 {
+    position: absolute;
+    width: 445px;
+    height: 410px;
+    left: 792px;
+    top: 512px;
+    background: url('Imagem\ da\ Daiana.png');
+    border-radius: 20px;
+    transform: translateX(60%);
+}
+
+
+
+
+/* Classes para animação (não alteram posições) */
+.slide-in-left {
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+    opacity: 0;
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+/* Animações */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Atraso para elementos inferiores */
+.delay {
+    animation-delay: 0.5s;
+}
+
+/* Animação para o retângulo inferior */
+@keyframes slideInFromRightDelayed {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+        /* Desloca da direita */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* A posição final será a centralizada */
+    }
+}
+
+.rectangle-inferior-2.animate {
+    animation: slideInFromRightDelayed 1s ease-out forwards;
+}
+
+/* Classes para animação (não alteram posições) */
+.slide-in-left {
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+    opacity: 0;
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+/* Animações */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Atraso para elementos inferiores */
+.delay {
+    animation-delay: 0.5s;
+}
+
+/* Animação para o retângulo inferior */
+@keyframes slideInFromRightDelayed {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+        /* Desloca da direita */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* A posição final será a centralizada */
+    }
+}
+
+.rectangle-inferior-2.animate {
+    animation: slideInFromRightDelayed 1s ease-out forwards;
+}
+
+/* Tela 6 */
+#tela6 {
+    position: relative;
+    width: 100%;
+    height: 376px;
+    background: #ffffff;
+    display: flex;
+    /* Adicionado para usar o Flexbox */
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+    justify-content: center;
+    /* Centraliza os itens verticalmente */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+}
+
+/* Agende a sua terapia online agora mesmo */
+.agendamento-texto {
+    position: absolute;
+    width: 1053px;
+    height: 45px;
+    left: 405px;
+    top: 46px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: #894F32;
+    text-align: center;
+
+}
+
+/* Rectangle 16 */
+.rectangle16 {
+    position: absolute;
+    width: 338px;
+    height: 87px;
+    left: 757px;
+    top: 188px;
+    background: rgba(167, 113, 75, 0.58);
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0);
+    border-radius: 55px;
+}
+
+/* Clicando no botão abaixo e falando diretamente comigo no WhatsApp! */
+.whatsapp-texto {
+    position: absolute;
+    width: 662px;
+    height: 50px;
+    left: 625px;
+    top: 123px;
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: center;
+
+}
+
+/* Agende sua sessão */
+.agendar-sessao {
+    position: absolute;
+    width: 263px;
+    height: 40px;
+    left: 800px;
+    top: 212px;
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+
+
+/* Tela 14 */
+#tela14 {
+  position: relative;
+    width: 100%;
+    height: 410px;
+    overflow: hidden;
+}
+
+/* Fundo 3 */
+.fundo-3 {
+  position: absolute;
+  width: 100%;
+  height: 410px;
+  background: url('Tela\ 14.png');
+  background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* 2025 © Todos os Direitos Reservados */
+.direitos-reservados {
+  position: absolute;
+  width: 326px;
+  height: 50px;
+  left: 96px;
+  top: 204px;
+  font-family: 'Song Myung';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  color: #4B3326;
+}
+
+/* Imagem do ChatGPT */
+.chatgpt-image {
+  position: absolute;
+  width: 583px;
+  height: 389px;
+  left: 643px;
+  top: 41px;
+  background: url('Logg.png');
+}
+
+/* Política de Privacidade • Termos de Uso */
+.politica-privacidade {
+  position: absolute;
+  width: 347px;
+  height: 50px;
+  left: 1412px;
+  top: 204px;
+  font-family: 'Song Myung';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  color: #4B3326;
+}

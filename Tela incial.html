@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daiana de N. Oliveira - Psicóloga Clínica</title>
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Albert+Sans&family=Bonheur+Royale&family=Esteban&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <!-- Inclusão do TextPlugin do GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/TextPlugin.min.js"></script>
+    <!-- Link para o AOS (Animate On Scroll) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="Tela inicial.css">
+</head>
+
+<body>
+    <section>
+        <video autoplay muted id="intro-video" class="intro-video">
+            <source src="Retira_o_nome_202602031642_ee2oe.mp4" type="video/mp4">
+            Seu navegador não suporta o formato de vídeo.
+        </video>
+
+        <!-- Menu de navegação fixo e centralizado -->
+
+
+        <div class="container">
+            <!-- Imagem de fundo principal -->
+            <div class="background-image"></div>
+
+            <!-- Imagem da psicóloga -->
+            <div class="psicologa-image"></div>
+
+            <!-- Degradê inferior -->
+            <div class="rectangle-3"></div>
+
+            <!-- Texto principal -->
+            <div class="main-title">Dra Daiana de Oliveira</div>
+            <div class="subtitle">Conecte-se com suas emoções e viva de acordo com seus valores, criando um espaço de
+                paz e
+
+            </div>
+            <div class="purpose">Meu propósito é ajudar você a ter mais qualidade de vida com saúde mental e emocional.
+            </div>
+
+            <!-- Botão de agendamento -->
+
+            <button class="schedule-button">
+                <span class="schedule-text">Agende sua consulta</span>
+                <div class="whatsappiconn">
+
+                </div>
+            </button>
+
+
+            <div class="footer-info">
+                <!-- Imagem ao lado do texto -->
+                <div class="footer-image-container">
+                    <img src="Insta.png" alt="Dra Daiana de Oliveira" class="footer-image">
+                </div>
+
+                <!-- Textos empilhados (nome e Instagram) -->
+                <div class="footer-texts">
+                    <div class="footer-text name">Dra Daiana do N Oliveira</div>
+                    <div class="footer-text insta">@psico_daiana21</div>
+                </div>
+            </div>
+
+
+            <!-- Ícones de redes sociais no topo -->
+            <div class="top-icons">
+                <a href="https://wa.me/seunumerodetelefone" target="_blank" class="icon"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/psicodaianadeoliveira" target="_blank" class="icon"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/daianadeoliveira" target="_blank" class="icon"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+
+            <!-- Imagem decorativa -->
+            <div class="decorative-image"></div>
+        </div>
+    </section>
+
+    <section id="sobre-mim-novo">
+        <div class="background-novo"></div>
+
+        <div class="sobre-mim-container">
+            <!-- Coluna da imagem -->
+            <div class="sobre-mim-imagem">
+                <img src="Foto sobre mim.png" alt="Daiana Oliveira - Psicóloga" class="imagem-perfil">
+            </div>
+
+            <!-- Coluna do texto -->
+            <div class="sobre-mim-texto">
+                <h1 data-aos="fade-right" data-aos-duration="1000">Sobre mim</h1>
+                <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    Olá! Sou a Daiana, Psicóloga Clínica e Social, (CRP 06/174182), realizo atendimentos na modalidade
+                    on-line e a minha abordagem central é a Terapia Cognitivo-Comportamental (TCC), que é uma abordagem
+                    estruturada, voltada para a prática e para a resolução de problemas. <br><br>
+
+                    Juntos, vamos identificar padrões de pensamento e comportamento que causam sofrimento e desenvolver
+                    ferramentas para lidar com eles de forma mais eficaz no seu dia a dia. <br><br>
+
+                    Meu processo terapêutico é guiado por práticas baseadas em evidências científicas. Dessa forma,
+                    criamos um tratamento personalizado, utilizando as intervenções mais adequadas para as suas
+                    necessidades, sempre considerando suas preferências e singularidades.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="carousel-container">
+        <button class="carousel-arrow left-arrow" id="left-arrow">&#10094;</button>
+
+        <div class="carousel-track" id="carousel-track">
+            <!-- Slide 1 (seu código original) -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h2 class="slide-title">Sobrecarga emocional</h2>
+                    <p class="slide-text">
+                        A sobrecarga emocional pode afetar todos nós, especialmente quando lidamos com múltiplas
+                        responsabilidades e pressões constantes. <br><br>
+
+                        No entanto, é possível gerenciar a pressão mental e emocional de forma eficaz, mantendo o
+                        equilíbrio no dia a dia.
+                    </p>
+                    <button class="slide-button">
+                        <span class="button-text">Agenda sua sessão</span>
+                        <img src="whatszap.png" alt="Ícone" class="button-icon">
+                    </button>
+                </div>
+                <img src="SOBRECARGA.png" alt="Imagem 1" class="slide-image">
+            </div>
+
+            <!-- Slide 2 (mesma estrutura, conteúdo diferente) -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h2 class="slide-title">Mente acelerada</h2>
+                    <p class="slide-text">
+                        Sua mente não desacelera à noite, com preocupações sobre contas e trabalho dominando seus
+                        pensamentos. O sono é interrompido e superficial, dificultando o descanso. <br><br>
+
+                        Ao acordar, você se sente cansado, como se não tivesse dormido o suficiente, perpetuando o ciclo
+                        de exaustão e falta de recuperação.
+                    </p>
+                    <button class="slide-button">
+                        <span class="button-text">Agenda sua sessão</span>
+                        <img src="whatszap.png" alt="Ícone" class="button-icon">
+                    </button>
+                </div>
+                <img src="Mente acelerada.png" alt="Imagem 2" class="slide-image">
+            </div>
+
+
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+
+                <div class="slide-content">
+                    <h2 class="slide-title">Insegurança e Medo</h2>
+                    <p class="slide-text">
+                        A insegurança tem bloqueado suas ações, gerando medo de errar, não ser aceito ou parecer
+                        fracassado. Esse receio impede que você se expresse como gostaria. <br><br>
+
+                        O medo constante de julgamento limita sua confiança, fazendo com que você se sinta inibido e não
+                        consiga mostrar seu verdadeiro potencial.
+                    </p>
+                    <button class="slide-button">
+                        <span class="button-text">Agenda sua sessão</span>
+                        <img src="whatszap.png" alt="Ícone" class="button-icon">
+                    </button>
+                </div>
+                <img src="Medo.png" alt="Imagem 3" class="slide-image">
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h2 class="slide-title">Insegurança e Medo</h2>
+                    <p class="slide-text">
+                        A insegurança tem bloqueado suas ações, gerando medo de errar, não ser aceito ou parecer
+                        fracassado. Esse receio impede que você se expresse como gostaria. <br><br>
+
+                        O medo constante de julgamento limita sua confiança, fazendo com que você se sinta inibido e não
+                        consiga mostrar seu verdadeiro potencial.
+                    </p>
+                    <button class="slide-button">
+                        <span class="button-text">Agenda sua sessão</span>
+                        <img src="whatszap.png" alt="Ícone" class="button-icon">
+                    </button>
+                </div>
+                <img src="Press~~ao.png" alt="Imagem 4" class="slide-image">
+            </div>
+
+        </div>
+
+        <button class="carousel-arrow right-arrow" id="right-arrow">&#10095;</button>
+
+        <div class="carousel-indicators" id="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+    </section>
+
+
+    <section class="benefits-section">
+        <div class="benefits-gradient"></div>
+        <h2 class="benefits-title">Benefícios com a psicoterapia</h2>
+        <p class="benefits-text">
+            A psicoterapia pode trazer benefícios significativos, como maior autoconhecimento, controle emocional,
+            redução da ansiedade e do estresse, melhora nos relacionamentos e aumento da autoestima. <br>
+            Ela ajuda a lidar melhor com desafios da vida e promove um bem-estar mental duradouro.
+        </p>
+
+        <div class="benefits-cards">
+            <!-- Card 1: Autocuidado -->
+            <div class="benefits-card">
+                <div class="card-icon autocuidado-icon"></div>
+                <h3 class="card-title">Autocuidado</h3>
+                <p class="card-description">Autocuidado é adotar hábitos saudáveis para cuidar de si mesmo</p>
+            </div>
+
+            <!-- Card 2: Controle Emocional -->
+            <div class="benefits-card">
+                <div class="card-icon controle-icon"></div>
+                <h3 class="card-title">Controle emocional</h3>
+                <p class="card-description">Controle emocional é a habilidade de gerir as próprias emoções de forma
+                    equilibradap>
+            </div>
+
+            <!-- Card 3: Melhora nos Relacionamentos -->
+            <div class="benefits-card">
+                <div class="card-icon relacionamentos-icon"></div>
+                <h3 class="card-title">Melhora nos relacionamentos</h3>
+                <p class="card-description">Melhora nos relacionamentos é praticar comunicação e empatia para fortalecer
+                    vínculos</p>
+            </div>
+
+            <!-- Card 4: Aumento da Autoestima -->
+            <div class="benefits-card">
+                <div class="card-icon autoestima-icon"></div>
+                <h3 class="card-title">Aumento da autoestima</h3>
+                <p class="card-description">Aumento da autoestima é fortalecer a confiança e o amor próprio, valorizando
+                    suas qualidades</p>
+            </div>
+        </div>
+
+        <button class="agendar-sessao-beneficios">
+            <span class="agendar-sessao-texto">Agendar uma sessão</span>
+            <img src="whatszap.png" alt="Ícone WhatsApp" class="agendar-sessao-icone">
+        </button>
+    </section>
+
+
+    <!-- Seção 5: Atendimento Online -->
+    <section class="online-section">
+        <div class="online-bg-image"></div>
+        <div class="online-gradient-top"></div>
+        <div class="online-frame"></div>
+        <h2 class="online-title">Atendimento Online: cuidado profissional, onde você estiver</h2>
+        <p class="online-text">
+            A psicoterapia online é uma forma segura, eficaz e acolhedora de cuidar da sua saúde mental sem sair de
+            casa. <br> <br>
+
+            Reconhecida por conselhos profissionais e respaldada por estudos científicos, ela oferece os mesmos
+            benefícios da terapia presencial, com mais praticidade para o seu dia a dia. <br><br>
+
+            Você só precisa de um ambiente reservado, uma boa conexão e o compromisso com o seu processo de
+            transformação.
+            Mais flexibilidade, menos deslocamentos, o mesmo acolhimento de sempre.
+        </p>
+        <div class="online-psicologa-image"></div>
+        <button class="online-schedule-btn">
+            <span class="online-schedule-text">Agenda sua sessão</span>
+            <img src="whatszap.png" alt="Ícone WhatsApp" class="online-whatsapp-icon">
+        </button>
+        <div class="online-gradient-bottom"></div>
+        <div class="online-decorative-leaf online-leaf-top"></div>
+        <div class="online-decorative-leaf online-leaf-bottom"></div>
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+    <section id="how">
+        <div class="section-tag reveal">Processo</div>
+        <h2 class="section-title reveal d1">Como funciona<br>o atendimento</h2>
+        <div class="steps-grid">
+            <div class="steps-line"></div>
+            <div class="step-item reveal">
+                <div class="step-num">1</div>
+                <div class="step-title">Preencha o formulário</div>
+                <p class="step-desc">Informe seu nome, contato e o que você está buscando. É rápido e seguro.</p>
+            </div>
+            <div class="step-item reveal d1">
+                <div class="step-num">2</div>
+                <div class="step-title">Sessão experimental</div>
+                <p class="step-desc">Realizamos uma primeira conversa para entender sua situação e definir o melhor
+                    plano.</p>
+            </div>
+            <div class="step-item reveal d2">
+                <div class="step-num">3</div>
+                <div class="step-title">Início do processo</div>
+                <p class="step-desc">Definimos juntos a frequência ideal e iniciamos as sessões regulares de terapia.
+                </p>
+            </div>
+            <div class="step-item reveal d3">
+                <div class="step-num">4</div>
+                <div class="step-title">Transformação real</div>
+                <p class="step-desc">Acompanho sua evolução com cuidado, empatia e técnicas baseadas em evidências.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section">
+  <div class="testi-intro">
+    <div>
+      <div class="section-tag reveal">Depoimentos</div>
+      <h2 class="section-title reveal d1">O que dizem<br>meus pacientes</h2>
+    </div>
+    <a href="#booking" class="btn-main reveal" style="align-self:flex-end">Quero começar também →</a>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"A Dra. Daiana mudou minha vida. Aprendi a lidar com minha ansiedade de forma que nunca achei que seria possível. Sinto-me uma pessoa nova."</p>
+      <div class="testi-author">
+        <div class="testi-avatar a1">A</div>
+        <div>
+          <div class="testi-name">Ana Paula M.</div>
+          <div class="testi-city">São Paulo, SP</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal d1">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Estava completamente esgotado pelo trabalho. Em poucos meses de terapia, consegui recuperar minha alegria e equilíbrio. Sou eternamente grato."</p>
+      <div class="testi-author">
+        <div class="testi-avatar a2">R</div>
+        <div>
+          <div class="testi-name">Ricardo S.</div>
+          <div class="testi-city">Rio de Janeiro, RJ</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal d2">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"O atendimento online foi incrível. Mesmo à distância, me senti completamente acolhida e compreendida. Recomendo de olhos fechados!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar a3">M</div>
+        <div>
+          <div class="testi-name">Mariana L.</div>
+          <div class="testi-city">Belo Horizonte, MG</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+    <!-- Script do AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        window.onload = function () {
+            const video = document.getElementById('intro-video');
+            const container = document.querySelector('.container'); // Conteúdo da página
+            const subtitle = document.querySelector('.subtitle'); // O elemento de texto que terá a animação
+            const footerInfo = document.querySelector('.footer-info'); // O rodapé com imagem e texto
+
+            // Inicializa o vídeo e a transição após 3 segundos
+            setTimeout(function () {
+                video.pause(); // Pausa o vídeo após 3 segundos
+                video.style.opacity = 0; // Fade out do vídeo
+                container.style.opacity = 1; // Fade in do conteúdo
+
+                // Animação de entrada do conteúdo com fade
+                gsap.from(container, {
+                    duration: 3,   // Duração da animação de entrada
+                    y: 100,        // Move o conteúdo de baixo para cima
+                    opacity: 0,    // Começa invisível
+                    ease: "power3.out" // Transição suave
+                });
+
+                // Função para animar o texto como se estivesse sendo digitado
+                const text = "Desenvolva habilidades mentais para identificar e controlar a ansiedade com eficácia";
+                let index = 0;
+
+                // Função que adiciona uma letra por vez ao conteúdo
+                function typeWriter() {
+                    if (index < text.length) {
+                        subtitle.innerHTML += text.charAt(index); // Adiciona uma letra por vez
+                        index++;
+                        setTimeout(typeWriter, 100); // Tempo entre cada letra (100ms)
+                    }
+                }
+
+                // Chama a função de digitação
+                typeWriter();
+
+                // Animação de entrada para o rodapé
+                gsap.from(footerInfo, {
+                    duration: 2,     // Duração da animação
+                    y: 50,           // Faz o rodapé aparecer de baixo para cima
+                    opacity: 0,      // Começa invisível
+                    ease: "power3.out", // Tipo de transição suave
+                    delay: 3         // Delay para começar após a animação do conteúdo
+                });
+
+            }, 3000); // O conteúdo será mostrado após 3 segundos de duração do vídeo
+        };
+    </script>
+
+    <script>
+        window.onload = function () {
+            const video = document.getElementById('intro-video');
+            const container = document.querySelector('.container'); // Conteúdo da página
+            const subtitle = document.querySelector('.subtitle'); // O elemento de texto que terá a animação
+            const footerInfo = document.querySelector('.footer-info'); // O rodapé com imagem e texto
+
+            // Inicializa o vídeo e a transição após 3 segundos
+            setTimeout(function () {
+                video.pause(); // Pausa o vídeo após 3 segundos
+                video.style.opacity = 0; // Fade out do vídeo
+                container.style.opacity = 1; // Fade in do conteúdo
+
+                // Animação de entrada do conteúdo com fade
+                gsap.from(container, {
+                    duration: 3,   // Duração da animação de entrada
+                    y: 100,        // Move o conteúdo de baixo para cima
+                    opacity: 0,    // Começa invisível
+                    ease: "power3.out" // Transição suave
+                });
+
+                // Função para animar o texto como se estivesse sendo digitado
+                const text = "autenticidade em sua vida.";
+                let index = 0;
+
+                // Função que adiciona uma letra por vez ao conteúdo
+                function typeWriter() {
+                    if (index < text.length) {
+                        subtitle.innerHTML += text.charAt(index); // Adiciona uma letra por vez
+                        index++;
+                        setTimeout(typeWriter, 100); // Tempo entre cada letra (100ms)
+                    }
+                }
+
+                // Chama a função de digitação
+                typeWriter();
+
+                // Animação de entrada para o rodapé
+                gsap.from(footerInfo, {
+                    duration: 2,     // Duração da animação
+                    y: 50,           // Faz o rodapé aparecer de baixo para cima
+                    opacity: 0,      // Começa invisível
+                    ease: "power3.out", // Tipo de transição suave
+                    delay: 3         // Delay para começar após a animação do conteúdo
+                });
+
+            }, 3000); // O conteúdo será mostrado após 3 segundos de duração do vídeo
+        };
+
+
+
+        // Função para iniciar a animação quando o frame se torna visível
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Quando o frame estiver visível, adiciona a classe 'animate' para a animação
+                    entry.target.classList.add('animate');
+                    // Desativa o observer para esse item
+                    observer.unobserve(entry.target);
+                }
+            });
+        }
+
+        // Criar um Intersection Observer
+        const observer = new IntersectionObserver(handleIntersection, {
+            threshold: 0.5, // A animação ocorre quando 50% do elemento estiver visível
+        });
+
+        // Selecionar os frames
+        const frames = document.querySelectorAll('.frame');
+
+        // Observa cada frame
+        frames.forEach(frame => {
+            observer.observe(frame);
+        });
+
+        // Função para adicionar a animação quando o título estiver visível
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Quando o título estiver visível, adiciona a classe 'animate' para a animação
+                    entry.target.classList.add('animate');
+                    // Desativa o observer para esse item, já que a animação foi aplicada
+                    observer.unobserve(entry.target);
+                }
+            });
+        }
+
+        // Criar um Intersection Observer para o título
+        const obserover = new IntersectionObserver(handleIntersection, {
+            threshold: 0.5, // A animação ocorre quando 50% do elemento estiver visível
+        });
+
+        // Selecionar o título
+        const title = document.querySelector('.title');
+
+        // Observar o título
+        observer.observe(title);
+
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Registra o plugin ScrollTrigger
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Seleciona a imagem
+            const imagem = document.querySelector('#sobre-mim-novo .sobre-mim-imagem img');
+
+            if (!imagem) {
+                console.error("Imagem não encontrada! Verifique o seletor '#sobre-mim-novo .sobre-mim-imagem img'.");
+                return;
+            }
+
+            // Função para reiniciar a animação
+            function setupAnimation() {
+                // Define o estado inicial da imagem
+                gsap.set(imagem, {
+                    opacity: 0,
+                    x: -100
+                });
+
+                // Cria a animação de scroll
+                ScrollTrigger.create({
+                    trigger: imagem,
+                    start: "top 80%",
+                    onEnter: () => {
+                        gsap.to(imagem, {
+                            opacity: 1,
+                            x: 0,
+                            duration: 1.0,
+                            ease: "power3.out"
+                        });
+                    },
+                    onLeaveBack: () => {
+                        // Reinicia a animação ao rolar para cima
+                        gsap.to(imagem, {
+                            opacity: 0,
+                            x: -100,
+                            duration: 0.2,
+                            ease: "power3.out"
+                        });
+                    }
+                });
+            }
+
+            // Configura a animação inicialmente
+            setupAnimation();
+
+            // Reinicia a animação ao rolar para a seção
+            ScrollTrigger.refresh();
+        });
+    </script>
+
+
+
+
+    <script>
+        // Usamos addEventListener para não dar conflito com seus outros window.onload
+        window.addEventListener('load', function () {
+            const track = document.getElementById('carousel-track');
+            const nextBtn = document.getElementById('right-arrow');
+            const prevBtn = document.getElementById('left-arrow');
+            const indicators = document.querySelectorAll('.indicator');
+            const slides = document.querySelectorAll('.carousel-slide');
+
+            if (!track || !nextBtn || !prevBtn) {
+                console.log("Erro: Elementos do carrossel não encontrados.");
+                return;
+            }
+
+            let currentIndex = 0;
+            const totalSlides = slides.length;
+
+            function moveToIndex(index) {
+                // Lógica de loop
+                if (index < 0) {
+                    index = totalSlides - 1;
+                } else if (index >= totalSlides) {
+                    index = 0;
+                }
+
+                currentIndex = index;
+
+                // Move o carrossel (100% para cada slide)
+                track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+
+                // Atualiza as bolinhas (indicadores)
+                indicators.forEach((dot, i) => {
+                    if (i === currentIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+
+            // Eventos de clique
+            nextBtn.onclick = function () {
+                moveToIndex(currentIndex + 1);
+            };
+
+            prevBtn.onclick = function () {
+                moveToIndex(currentIndex - 1);
+            };
+
+            // Clique nas bolinhas
+            indicators.forEach((dot, i) => {
+                dot.onclick = function () {
+                    moveToIndex(i);
+                };
+            });
+
+            console.log("Carrossel iniciado com sucesso!");
+        });
+    </script>
+
+    <script>
+        // Função para verificar se um elemento está visível na tela
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.bottom >= 0
+            );
+        }
+
+        // Função para adicionar/remover a classe 'visible'
+        function checkVisibility() {
+            const elements = document.querySelectorAll('.fade-in, .benefits-card');
+            elements.forEach((element) => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('visible');
+                } else {
+                    // Remove a classe 'visible' se o elemento não estiver visível
+                    element.classList.remove('visible');
+                }
+            });
+        }
+
+        // Executa a função ao carregar a página e ao rolar
+        window.addEventListener('load', checkVisibility);
+        window.addEventListener('scroll', checkVisibility);
+    </script>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Registra o ScrollTrigger
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Seleciona os elementos da seção `.online-section` que serão animados
+            const onlineTitle = document.querySelector('.online-title');
+            const onlineText = document.querySelector('.online-text');
+            const onlineImage = document.querySelector('.online-psicologa-image');
+            const onlineButton = document.querySelector('.online-schedule-btn');
+
+            // Define o estado inicial dos elementos (invisíveis e deslocados)
+            gsap.set([onlineTitle, onlineText, onlineImage, onlineButton], {
+                opacity: 0,
+                y: 30
+            });
+
+            // Anima o título
+            gsap.to(onlineTitle, {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: onlineTitle,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+
+            // Anima o texto (com delay para sequência)
+            gsap.to(onlineText, {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: onlineText,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+
+            // Anima a imagem (com delay para sequência)
+            gsap.to(onlineImage, {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: 0.4,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: onlineImage,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+
+            // Anima o botão (com delay para sequência)
+            gsap.to(onlineButton, {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: 0.6,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: onlineButton,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Registra o ScrollTrigger
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Seleciona os elementos da seção `.online-section` que serão animados
+            const onlineTitle = document.querySelector('.online-title');
+            const onlineText = document.querySelector('.online-text');
+            const onlineImage = document.querySelector('.online-psicologa-image');
+            const onlineButton = document.querySelector('.online-schedule-btn');
+
+            // Define o estado inicial dos elementos (invisíveis e deslocados)
+            gsap.set([onlineTitle, onlineText, onlineImage, onlineButton], {
+                opacity: 0,
+                y: 30
+            });
+
+            // Anima o título
+            gsap.to(onlineTitle, {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: onlineTitle,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+
+            // Anima o texto (com delay para sequência)
+            gsap.to(onlineText, {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: onlineText,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+
+            // Anima a imagem (com delay para sequência)
+            gsap.to(onlineImage, {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: 0.4,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: onlineImage,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+
+            // Anima o botão (com delay para sequência)
+            gsap.to(onlineButton, {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: 0.6,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: onlineButton,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
