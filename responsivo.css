@@ -259,17 +259,21 @@
     .right-arrow {
         right: 10px !important;
     }
-     .encontra{
-          height: auto !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important; /* Altera de flex-start para center */
-    padding: 100px 5% 60px !important;
-    overflow: hidden !important;
-    position: relative !important;
-    text-align: center !important; /* Centraliza o texto */
-    width: 100% !important; /* Garante que ocupe toda a largura */
+
+    .encontra {
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        /* Altera de flex-start para center */
+        padding: 100px 5% 60px !important;
+        overflow: hidden !important;
+        position: relative !important;
+        text-align: center !important;
+        /* Centraliza o texto */
+        width: 100% !important;
+        /* Garante que ocupe toda a largura */
     }
 
 
@@ -406,11 +410,13 @@
         max-width: 640px !important;
         text-align: center !important;
         margin: 0 auto 1rem !important;
-        
+
     }
- .purpose { transform: translateY(30px) !important;
+
+    .purpose {
+        transform: translateY(30px) !important;
     }
-    
+
 
     .main-title {
         font-size: clamp(.5rem, 5vw, 60px) !important;
@@ -488,17 +494,21 @@
         /* Adiciona espaço abaixo da imagem */
         display: block !important;
     }
-    .encontra{
-          height: auto !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important; /* Altera de flex-start para center */
-    padding: 100px 5% 60px !important;
-    overflow: hidden !important;
-    position: relative !important;
-    text-align: center !important; /* Centraliza o texto */
-    width: 100% !important; /* Garante que ocupe toda a largura */
+
+    .encontra {
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        /* Altera de flex-start para center */
+        padding: 100px 5% 60px !important;
+        overflow: hidden !important;
+        position: relative !important;
+        text-align: center !important;
+        /* Centraliza o texto */
+        width: 100% !important;
+        /* Garante que ocupe toda a largura */
     }
 
     .slide-title {
@@ -557,6 +567,8 @@
     /* Booking */
     #booking {
         padding: 4rem 1.2rem !important;
+
+        margin-left: 50px !important;
     }
 
     .form-row {
@@ -578,7 +590,7 @@
         text-align: center !important;
     }
 
-    footer {
+    .footer {
         padding: 2.5rem 1.2rem 1.5rem !important;
     }
 
@@ -623,18 +635,22 @@
     .section-title {
         font-size: 1.5rem !important;
     }
- .encontra {
-    height: auto !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important; /* Altera de flex-start para center */
-  
-    overflow: hidden !important;
-    position: relative !important;
-    text-align: center !important; /* Centraliza o texto */
-    width: 100% !important; /* Garante que ocupe toda a largura */
-}
+
+    .encontra {
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        /* Altera de flex-start para center */
+
+        overflow: hidden !important;
+        position: relative !important;
+        text-align: center !important;
+        /* Centraliza o texto */
+        width: 100% !important;
+        /* Garante que ocupe toda a largura */
+    }
 
 
     .slide-title {
