@@ -1088,7 +1088,8 @@
       }
 
       // Envia os dados do FORM diretamente (mais simples e confiável)
-      emailjs.sendForm('SEU_SERVICE_ID', 'SEU_TEMPLATE_ID', this)  // ← COLE SEUS IDs AQUI
+      emailjs.sendForm("service_bv5659i","template_x2y6a9r",this)
+
         .then(function(response) {
           console.log('Sucesso!', response.status, response.text);
           document.getElementById('form-content').style.display = 'none';
