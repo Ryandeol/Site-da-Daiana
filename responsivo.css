@@ -406,7 +406,11 @@
         max-width: 640px !important;
         text-align: center !important;
         margin: 0 auto 1rem !important;
+        
     }
+ .purpose { transform: translateY(30px) !important;
+    }
+    
 
     .main-title {
         font-size: clamp(.5rem, 5vw, 60px) !important;
